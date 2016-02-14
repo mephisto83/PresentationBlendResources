@@ -34,13 +34,9 @@ files.sort()
 _scene = bpy.data.scenes[0]
 _scene.render.resolution_x = 1920
 _scene.render.resolution_y = 1080
-_scene.render.resolution_percentage = 100
-
-
 _scene.render.image_settings.file_format = 'H264'
 _scene.render.filepath = "//output/" + renderPath
 _scene.render.ffmpeg.audio_codec = 'MP3'
-_scene.render.ffmpeg.audio_bitrate = 350
 
 print(files[0])
 # create the sequencer data
